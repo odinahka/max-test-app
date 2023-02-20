@@ -54,9 +54,6 @@ module.exports = {
         '2': '2 2 0%',
         '3': '3 3 0%',
         '4': '4 4 0%'
-      },
-      borderRadius: {
-        'korpea_large':'80px'
       }
     },
   },
