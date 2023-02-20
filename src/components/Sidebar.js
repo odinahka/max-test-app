@@ -2,7 +2,7 @@ import React from 'react';
 
 const Sidebar = () => {
     return (
-        <div className='h-screen flex-1 flex flex-col relative'>
+        <div className='min-h-screen flex-1 flex flex-col relative'>
             <div className='absolute top-4 bg-max_file_logo_blue'>
                 <img src={'maxfile/visaprof-logo 1.png'} alt='#'/>
             </div>
