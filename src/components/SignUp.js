@@ -50,11 +50,11 @@ setPage('signIn')
 }
 
     const signUpOptions = {
-        firstName: ' first name is required',
-        lastName: ' last name is required', 
-        email: ' email is required',
-        password: ' password is required',
-        confirmPassword: ' confirm password is required',
+        firstName: {required: ' first name is required'},
+        lastName: {required: ' last name is required'}, 
+        email: {required: ' email is required'},
+        password: {required: ' password is required'},
+        confirmPassword:{required: ' confirm password is required'},
     }
     const passwordError = () => {
         setError('confirmPassword', {type: 'custom', message:'Password doesn\'t match'}, {shouldFocus:true})

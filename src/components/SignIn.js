@@ -13,8 +13,8 @@ const SignIn = ({setIsSignedIn, setPage}) => {
         setOpen(!open);
     }
     const signUpOptions = {
-        email: ' email is required',
-        password: ' password is required',
+        email: {required: ' email is required'},
+        password: {required: ' password is required'},
     }
     const onSubmit = async(formData) => {
         
