@@ -1,23 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import {useState} from 'react';
+import MainFeed from "./components/MainFeed";
+import SignInFeed from "./components/SignFeed";
 
 function App() {
+  const [page, setPage] = useState('main');
+  const [isSignedIn, setIsSignedIn] = useState(false);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="bg-gray-100">
+      {page !== 'main' && <SignInFeed page={page} setIsSignedIn={setIsSignedIn} setPage={setPage}/>}
+      {page === 'main' && <MainFeed setPage={setPage} isSignedIn={isSignedIn}/>}
     </div>
   );
 }
