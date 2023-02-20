@@ -4,7 +4,7 @@ import {BsFillPlusCircleFill} from 'react-icons/bs'
 
 const FAQs = () => {
     return (
-        <div className='min-h-screen flex flex-col items-center justify-center space-y-12'>
+        <div className='min-h-screen flex flex-col items-center justify-center space-y-3 mt-4'>
             <h2 className='font-extrabold '>Frequently asked <span className='text-max_file_yellow_1'>questions</span></h2>
             <div className='space-y-10 divide-y-2 py-7 px-4 shadow-lg'>
                 <div className='flex pt-10'>

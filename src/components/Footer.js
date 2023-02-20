@@ -7,7 +7,7 @@ import {FaFacebookF} from 'react-icons/fa';
 const Footer = () => {
     return (
         <div className='flex  flex-col pt-6 space-y-4 min-h-[200px]'>
-            <div className='flex space-x-8 justify-evenly'>
+            <div className='flex md:space-x-8 flex-col md:flex-row justify-evenly'>
             <div className='flex flex-row items-center justify-center space-x-2'>
                 <AiFillLinkedin className='text-blue-700'/>
                 <AiOutlineWhatsApp className='text-green-600'/>
@@ -16,22 +16,22 @@ const Footer = () => {
                 <AiFillInstagram className='text-pink-600'/>
 
             </div>
-            <div>
+            <div className='flex flex-col items-center'>
                 <h3>Company</h3>
                 <p className='text-gray-500'>Home</p>
                 <p className='text-gray-500'>About Us</p>
             </div>
-            <div>
+            <div className='flex flex-col items-center'>
                 <h3>Legal</h3>
                 <p className='text-gray-500'>Term of service</p>
                 <p className='text-gray-500'>Privacy policy</p>
             </div>
-            <div>
+            <div className='flex flex-col items-center'>
                 <h3>Community</h3>
                 <p className='text-gray-500'>Blog</p>
                 <p className='text-gray-500'>FAQs</p>
             </div>
-            <div>
+            <div className='flex flex-col items-center'>
                 <h3>Contact</h3>
                 <p className='text-gray-500'>info@visaprof.com</p>
                 <p className='text-gray-500'>07017401336</p>
